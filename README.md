@@ -8,3 +8,24 @@ Allrecipes recipes are found in urls such as www.allrecipes.com/recipe/<recipe i
 #**Spark to Derive Insights**
 The data collected had to be cleaned for proper analysis. We cleaned certain variables such as "number of ratings" by assigning null values to be 0 and checking for duplicate recipes. We conducted exploratory analysis by looking at the top reviewed recipes, top rated recipes, correlation between attributes and its star ratings, etc. Finally, we conducted predictive analytics for star ratings by building machine learning models.
   
+Introduction
+
+Methdology
+--picture of all techs used and how they related
+
+Step 1: Scraping web data to generate csv file
+
+Step 2: Load to s3 bucket
+--reasining of using s3 bucket and how to potentially scale
+
+Step 3: Exploratory Analysis with Spark
+3a: findings 1
+3b: findings 2
+
+Step 5: Predictive Analytics
+
+Step 6: Recommendations
+
+Challenges
+
+Conclusion
