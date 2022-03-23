@@ -2,11 +2,11 @@
 ## **Overview**
 This project details the steps for webscrapping over 10,000+ recipes to analyze factors that could contribute to a higher star ratings from 1 to 5. Included in each recipe are 20 attributes such as  star ratings, number of reviews, number of photos, cooking time, nutrition information, etc. After scrapping data from allrecipes, we generated a csv file that is automatically uploaded to an AWS S3 bucket. We then generate a dataframe from the file using Spark and performed exploratory data analysis to understand distribution of different attributes.
 
-##**Introduction**
+#**Introduction**#
 Food recipe websites is a highly competitive space, where any data that could improve customer satisfaction could give an edge against competitors. In this project, we webscrapped 10,000+ recipes to analyze factors that could contribute to a higher customer satisfaction measured by star ratings from 1 to 5. We pull various attributes and did exploratory analysis against them. We found that customers were agnostic of nutrition info and are more favorable to websites with high reviews. We discuss shortcomings in this project and possible improvements.
   
   
-##**Methdology**
+#**Methdology**#
 We scraped Allrecipes with the possibility of scale at mind by doing the following:
   
 Step 1: Obtain allrecipes attributes and load to a csv file
@@ -14,7 +14,7 @@ Step 2: Script uploads csv file to AWS S3 bucket to Athena table
 Step 3: Exploratory Analysis with Spark refrecencing table
  
   
-##**STEP 1: HTML to obtain attributes and load to a csv file**
+#**STEP 1: HTML to obtain attributes and load to a csv file**#
 Allrecipes recipes are found in urls such as www.allrecipes.com/recipe/<recipe id>. By using a loop to iterate through a set range of recipe_ids, we were able to gather data and save it to a csv file. Recipes are parsed far and can vary in html depending on if it has certain attributes.For example, html for recipes with ratings is different those without ratings, and we had to keep those edge cases in mind for scrapping. Some standardization was done to time attributes by changing weeks/hours to minutes. We handled each attribute and throw an exception to skip if the recipe has invalid contents. For each recipe, we appended attribute data to their own lists to be fed to a dataframe that was able to upload a csv directly to AWS S3.
   
 ##**STEP 2: Script uploads csv file to AWS S3 bucket**
