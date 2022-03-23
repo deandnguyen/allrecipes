@@ -9,8 +9,12 @@ Food recipe websites is a highly competitive space, where any data that could im
 We scraped Allrecipes with the possibility of scale at mind by doing the following:
   
 Step 1: Obtain allrecipes attributes and load to a csv file
+
 Step 2: Script uploads csv file to AWS S3 bucket to Athena table
+
 Step 3: Exploratory Analysis with Spark refrecencing table
+ 
+![image](https://user-images.githubusercontent.com/51719335/159598772-f3ced6b4-090c-4a3a-8822-b5056c8b6704.png)
  
 
 **STEP 1: HTML to obtain attributes and load to a csv file**
