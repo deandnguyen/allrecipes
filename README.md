@@ -14,7 +14,7 @@ Step 2: Script uploads csv file to AWS S3 bucket to Athena table
 
 Step 3: Exploratory Analysis with Spark refrecencing table
  
-![image](https://user-images.githubusercontent.com/51719335/159598772-f3ced6b4-090c-4a3a-8822-b5056c8b6704.png)
+![image](https://user-images.githubusercontent.com/51719335/160030113-4430f842-5d36-4214-baa7-33242a0f77bd.png)
  
 
 **STEP 1: HTML to obtain attributes and load to a csv file**
