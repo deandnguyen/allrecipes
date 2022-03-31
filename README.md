@@ -6,7 +6,7 @@ This project details the steps for webscraping over 13,000+ recipes to analyze f
 # Introduction
 Food recipe websites is a highly competitive space, where any data that could improve customer satisfaction could give an edge against competitors. In this project, we webscraped 13,000+ recipes to analyze factors that could contribute to a higher customer satisfaction measured by star ratings from 1 to 5. We pull various attributes and performed exploratory analysis. We found that customers were agnostic of nutrition information and are more favorable to websites with high reviews. We discuss shortcomings in this project and possible improvements.
 
-# Methdology
+# Methodology
 We scraped Allrecipes with the possibility of scale at mind by doing the following:
 
 Step 1: Obtain allrecipes attributes and load to a csv file
